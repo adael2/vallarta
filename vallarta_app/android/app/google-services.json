@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "689304516125",
+    "firebase_url": "https://vallarta-restaurant-default-rtdb.firebaseio.com",
+    "project_id": "vallarta-restaurant",
+    "storage_bucket": "vallarta-restaurant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689304516125:android:d20270b8aa34701b21f8f4",
+        "android_client_info": {
+          "package_name": "com.example.vallarta_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689304516125-b8eipcf910ieg27aeu0dl4k04slm2dhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvgaYRcLXRi9QPEZL2NNhZlxr6U52nuS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689304516125-b8eipcf910ieg27aeu0dl4k04slm2dhs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689304516125-4cgnlp1670r1i5ouqfn5dn4j4ah0tkqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.vallartaApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
