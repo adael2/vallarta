@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vallarta_app/favorites_page.dart';
+import 'commands_page.dart';
 import 'generators_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = const GeneratorPage();
         break;
       case 1:
-        page = const FavoritesPage();
+        page = const CommandsPage();
         break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
@@ -31,28 +31,27 @@ class _MyHomePageState extends State<MyHomePage> {
       return Scaffold(
         body: Row(
           children: [
-            // TODO: This will be needed but later.
-            // SafeArea(
-            //   child: NavigationRail(
-            //     extended: constraints.maxWidth >= 600,
-            //     destinations: const [
-            //       NavigationRailDestination(
-            //         icon: Icon(Icons.home),
-            //         label: Text('Home'),
-            //       ),
-            //       NavigationRailDestination(
-            //         icon: Icon(Icons.favorite),
-            //         label: Text('Favorites'),
-            //       ),
-            //     ],
-            //     selectedIndex: selectedIndex,
-            //     onDestinationSelected: (value) {
-            //       setState(() {
-            //         selectedIndex = value;
-            //       });
-            //     },
-            //   ),
-            // ),
+            SafeArea(
+              child: NavigationRail(
+                extended: constraints.maxWidth >= 600,
+                destinations: const [
+                  NavigationRailDestination(
+                    icon: Icon(Icons.home),
+                    label: Text('Mesas'),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(Icons.favorite),
+                    label: Text('Comandas'),
+                  ),
+                ],
+                selectedIndex: selectedIndex,
+                onDestinationSelected: (value) {
+                  setState(() {
+                    selectedIndex = value;
+                  });
+                },
+              ),
+            ),
             Expanded(
               child: Container(
                 color: Theme.of(context).colorScheme.primaryContainer,

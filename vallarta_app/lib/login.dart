@@ -16,6 +16,8 @@ class _LoginPageState extends State<Login> {
 
   void validateUser() async {
     final form = formKey.currentState;
+    final goHome = Navigator.push(
+        context, MaterialPageRoute(builder: (_) => const MyHomePage()));
     UserCredential user;
 
     if (form!.validate()) {
@@ -23,6 +25,9 @@ class _LoginPageState extends State<Login> {
       try {
         user = await FirebaseAuth.instance
             .signInWithEmailAndPassword(email: _email, password: _password);
+        if (user.user!.uid.isNotEmpty) {
+          goHome;
+        }
       } catch (e) {}
     }
   }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'big_card.dart';
-import 'main.dart';
 
 class GeneratorPage extends StatelessWidget {
   const GeneratorPage({super.key});
@@ -13,6 +11,15 @@ class GeneratorPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
           BigCard(pair: "Mesa 1"),
+          BigCard(pair: "Mesa 2"),
+          BigCard(pair: "Mesa 3"),
+          BigCard(pair: "Mesa 4"),
+          BigCard(pair: "Mesa 6"),
+          BigCard(pair: "Mesa 7"),
+          BigCard(pair: "Mesa 8"),
+          BigCard(pair: "Mesa 9"),
+          BigCard(pair: "Mesa 10"),
+          BigCard(pair: "Para llevar"),
           SizedBox(height: 10),
         ],
       ),

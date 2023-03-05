@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'main.dart';
+import 'menu_page.dart';
 
 class FavoritesPage extends StatelessWidget {
   const FavoritesPage({super.key});
@@ -9,25 +10,40 @@ class FavoritesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
 
-    if (appState.favorites.isEmpty) {
-      return const Center(
-        child: Text('No favorites yet.'),
-      );
-    }
-
-    return ListView(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(20),
-          child: Text('You have '
-              '${appState.favorites.length} favorites:'),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Numero de comensales',
+                  hintText: 'Ingresa cuantos comensales seran en la mesa',
+                ),
+              ),
+            ),
+            Container(
+              height: 50,
+              width: 250,
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const MenuPage()));
+                },
+                child: const Text(
+                  'Ir al menu',
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+              ),
+            ),
+          ],
         ),
-        for (var pair in appState.favorites)
-          ListTile(
-            leading: const Icon(Icons.favorite),
-            title: Text(pair.asLowerCase),
-          ),
-      ],
+      ),
     );
   }
 }
