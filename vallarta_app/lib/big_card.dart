@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:vallarta_app/favorites_page.dart';
+import 'package:provider/provider.dart';
+import 'package:vallarta_app/diners_page.dart';
+
+import 'main.dart';
 
 class BigCard extends StatelessWidget {
   const BigCard({
@@ -11,10 +14,10 @@ class BigCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
     return TextButton(
       onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (_) => const FavoritesPage()));
+        appState.changeIndex(2);
       },
       child: Text(
         pair,

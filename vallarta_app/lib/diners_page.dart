@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'main.dart';
-import 'menu_page.dart';
 
-class FavoritesPage extends StatelessWidget {
-  const FavoritesPage({super.key});
+class DinersPage extends StatelessWidget {
+  const DinersPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +28,10 @@ class FavoritesPage extends StatelessWidget {
               height: 50,
               width: 250,
               decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                  color: Colors.redAccent, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const MenuPage()));
+                  appState.changeIndex(3);
                 },
                 child: const Text(
                   'Ir al menu',
