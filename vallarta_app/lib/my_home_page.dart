@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'commands_page.dart';
-import 'generators_page.dart';
+import 'tables_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -18,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     switch (selectedIndex) {
       case 0:
-        page = const GeneratorPage();
+        page = const TablesPage();
         break;
       case 1:
         page = const CommandsPage();

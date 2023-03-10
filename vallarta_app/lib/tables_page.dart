@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'big_card.dart';
 
-class GeneratorPage extends StatelessWidget {
-  const GeneratorPage({super.key});
+class TablesPage extends StatelessWidget {
+  const TablesPage({super.key});
 
   @override
   Widget build(BuildContext context) {

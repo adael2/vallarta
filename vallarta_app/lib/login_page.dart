@@ -19,6 +19,25 @@ class _LoginPageState extends State<Login> {
     final goHome = Navigator.push(
         context, MaterialPageRoute(builder: (_) => const MyHomePage()));
     UserCredential user;
+    final alert = AlertDialog(
+        title: const Text('AlertDialog Title'),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: const <Widget>[
+              Text('This is a demo alert dialog.'),
+              Text('Would you like to approve of this message?'),
+            ],
+          ),
+        ),
+        actions: <Widget>[
+          TextButton(
+            child: const Text('Approve'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
 
     if (form!.validate()) {
       form.save();
@@ -27,6 +46,8 @@ class _LoginPageState extends State<Login> {
             .signInWithEmailAndPassword(email: _email, password: _password);
         if (user.user!.uid.isNotEmpty) {
           goHome;
+        } else {
+          alert;
         }
       } catch (e) {}
     }
