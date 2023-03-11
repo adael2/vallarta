@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'commands_page.dart';
+import 'diners_page.dart';
+import 'main.dart';
+import 'menu_page.dart';
 import 'tables_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -14,14 +18,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
     Widget page;
 
-    switch (selectedIndex) {
+    switch (appState.selectedIndex) {
       case 0:
         page = const TablesPage();
         break;
       case 1:
         page = const CommandsPage();
+        break;
+      case 2:
+        page = const DinersPage();
+        break;
+      case 3:
+        page = const MenuPage();
         break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');

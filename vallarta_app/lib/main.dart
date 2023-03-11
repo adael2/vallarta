@@ -3,7 +3,7 @@ import 'firebase_options.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'login.dart';
+import 'login_page.dart';
 
 Future<void> main() async {
   await Firebase.initializeApp(
@@ -23,29 +23,19 @@ class MyApp extends StatelessWidget {
         title: 'Vallarta restaurant',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellowAccent),
         ),
-        home: const Login(),
+        home: const LoginPage(),
       ),
     );
   }
 }
 
 class MyAppState extends ChangeNotifier {
-  var current = WordPair.random();
-  var favorites = <WordPair>[];
+  var selectedIndex = 0;
 
-  void getNext() {
-    current = WordPair.random();
-    notifyListeners();
-  }
-
-  void toggleFavorite() {
-    if (favorites.contains(current)) {
-      favorites.remove(current);
-    } else {
-      favorites.add(current);
-    }
+  void changeIndex(int index) {
+    selectedIndex = index;
     notifyListeners();
   }
 }
