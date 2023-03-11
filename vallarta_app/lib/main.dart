@@ -33,9 +33,15 @@ class MyApp extends StatelessWidget {
 
 class MyAppState extends ChangeNotifier {
   var selectedIndex = 0;
+  var diners = 0;
 
   void changeIndex(int index) {
     selectedIndex = index;
+    notifyListeners();
+  }
+
+  void changeDiners(int amountDiners) {
+    diners = amountDiners;
     notifyListeners();
   }
 }
