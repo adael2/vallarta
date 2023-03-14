@@ -153,19 +153,182 @@
                     "deductions": []
                 },
                 {
-                    "name": "Tacos de tripa",
+                    "name": "Tacos",
                     "price": 18.00,
                     "description": "order of 3",
                     "additions": 
                     [
                         {
+                            "option": "tripa",
+                            "addition": 0.00
+                        },
+                        {
                             "option": "crispy tripa",
                             "addition": 2.00
+                        },
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "vegetarian",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "prawn",
+                            "addition": 2.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Taco",
+                    "price": 6.50,
+                    "description": "individual",
+                    "additions": 
+                    [
+                        {
+                            "option": "tripa",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "crispy tripa",
+                            "addition": 0.50
+                        },
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "vegetarian",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "prawn",
+                            "addition": 0.50
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Pupusa",
+                    "price": 4.75,
+                    "description": "Corn tortilla comes with cabbage and tomato sauce",
+                    "additions": 
+                    [
+                        {
+                            "option": "cheese",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beans",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "chicharron",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "mixed",
+                            "addition": 0.00
                         }
                     ],
                     "deductions": []
                 }
             ]
+        },
+        {
+            "name": "Vegetarian",
+            "options": [
+                {
+                    "name": "Burrito / Tacos / Enchilada / Quesadilla",
+                    "price": 0.00,
+                    "description": "Veggies include - Zuchini, carrots, cawliflower, broccoli and peppers... contains dairy",
+                    "additions": [],
+                    "deductions": []
+                }
+            ] 
+        },
+        {
+            "name": "Lunch & Dinner Entrees",
+            "options": [
+                {
+                    "name": "Quesadilla",
+                    "price": 18.00,
+                    "description": "comes with side salad and sour cream",
+                    "additions": 
+                    [
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "pork",
+                            "addition": 1.50
+                        },
+                        {
+                            "option": "lengua",
+                            "addition": 0.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Burrito",
+                    "price": 18.00,
+                    "description": "comes with side salad",
+                    "additions": 
+                    [
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "vegetarian",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "pork",
+                            "addition": 1.50
+                        },
+                        {
+                            "option": "lengua",
+                            "addition": 0.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Flautas",
+                    "price": 18.00,
+                    "description": "comes with side salad, beans, rice and sour cream",
+                    "additions": 
+                    [
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        }
+                    ],
+                    "deductions": []
+                }
+                
+            ] 
         }
     ]
 }
