@@ -8,30 +8,33 @@ class DinersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
+    var textController = TextEditingController();
 
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(10),
+            Padding(
+              padding: const EdgeInsets.all(10),
               child: TextField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Numero de comensales',
                   hintText: 'Ingresa cuantos comensales seran en la mesa',
                 ),
+                controller: textController,
               ),
             ),
             Container(
               height: 50,
               width: 250,
               decoration: BoxDecoration(
-                  color: Colors.redAccent, borderRadius: BorderRadius.circular(20)),
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  appState.changeDiners()
+                  //appState.changeDiners(int.parse(textController.text));
                   appState.changeIndex(3);
                 },
                 child: const Text(

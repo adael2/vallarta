@@ -1,0 +1,171 @@
+{
+    "name": "menu",
+    "options": [
+        {
+            "name": "Starters",
+            "options": [
+                {
+                    "name": "Chips & Pico de gallo",
+                    "price": 6.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Nachos with beans & cheese",
+                    "price": 17.00,
+                    "description": "comes with pico de gallo and sour cream",
+                    "additions": [
+                        {
+                            "option": "chicken",
+                            "addition": 4.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 4.00
+                        }
+                    ],
+                    "deductions": [
+                        {
+                            "option": "1/2 order",
+                            "deduction": 4.00
+                        }
+                    ]
+                }
+            ] 
+        },
+        {
+            "name": "Sides",
+            "options": [
+                {
+                    "name": "Sour cream",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Pico de gallo",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Guacamole",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Beans",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [
+                        {
+                            "option": "large",
+                            "addition": 2.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Rice",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [
+                        {
+                            "option": "large",
+                            "addition": 2.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Cabbage",
+                    "price": 2.75,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Spicy salsa",
+                    "price": 1.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Tomato sauce",
+                    "price": 1.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Lime",
+                    "price": 1.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                }
+            ]
+        },
+        {
+            "name": "Specialities",
+            "options": [
+                {
+                    "name": "Menudo - pancita soup",
+                    "price": 18.00,
+                    "description": "Comes with tortillas, onion, cilantro and hot sauce",
+                    "additions": [
+                        {
+                            "option": "extra order tortilla - 4",
+                            "addition": 1.00
+                        }
+                    ],
+                    "deductions": [
+                        {
+                            "option": "medium size",
+                            "deduction": 5.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Pozole - pork soup",
+                    "price": 18.00,
+                    "description": "Comes with chips, lettuce, onion, cilantro and hot sauce",
+                    "additions": [],
+                    "deductions": 
+                    [
+                        {
+                            "option": "medium size",
+                            "deduction": 5.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Sopa tortilla - Tortilla soup",
+                    "price": 12.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Tacos de tripa",
+                    "price": 18.00,
+                    "description": "order of 3",
+                    "additions": 
+                    [
+                        {
+                            "option": "crispy tripa",
+                            "addition": 2.00
+                        }
+                    ],
+                    "deductions": []
+                }
+            ]
+        }
+    ]
+}
