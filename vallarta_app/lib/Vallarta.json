@@ -326,8 +326,54 @@
                         }
                     ],
                     "deductions": []
+                },
+                {
+                    "name": "Enchiladas",
+                    "price": 18.00,
+                    "description": "comes with side salad, beans, rice and tortillas",
+                    "additions": 
+                    [
+                        {
+                            "option": "chicken",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "beef",
+                            "addition": 0.00
+                        },
+                        {
+                            "option": "vegetarian",
+                            "addition": 0.00
+                        }
+                    ],
+                    "deductions": []
+                },
+                {
+                    "name": "Pechuga a la parrilla - Chicken breast grilled",
+                    "price": 19.75,
+                    "description": "comes with side salad, beans, rice and tortillas",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Carne a la parrilla - Beef steak grilled",
+                    "price": 19.75,
+                    "description": "comes with side salad, beans, rice and tortillas",
+                    "additions": [
+                        {
+                            "option": "Lengua",
+                            "addition": 1.75
+                        }
+                    ],
+                    "deductions": []
                 }
-                
+                {
+                    "name": "Camarones al ajo - garlic prawns and vegetables - contains dairy",
+                    "price": 21.50,
+                    "description": "comes with side salad, beans, rice and tortillas",
+                    "additions": [],
+                    "deductions": []
+                }
             ] 
         }
     ]
