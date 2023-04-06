@@ -366,15 +366,74 @@
                         }
                     ],
                     "deductions": []
-                }
+                },
                 {
                     "name": "Camarones al ajo - garlic prawns and vegetables - contains dairy",
                     "price": 21.50,
                     "description": "comes with side salad, beans, rice and tortillas",
                     "additions": [],
                     "deductions": []
+                },
+                {
+                    "name": "Tilapia firta - fried Tilapia (min 30 minutes preparation)",
+                    "price": 19.75,
+                    "description": "comes with side salad, beans, rice and tortillas",
+                    "additions": [],
+                    "deductions": []
                 }
             ] 
+        },
+        {
+            "name": "Drinks",
+            "options": [
+                {
+                    "name": "Horchata - contains dairy",
+                    "price": 3.75,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Jarritos - Mexican bottled pop",
+                    "price": 4.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Soft drinks - canned",
+                    "price": 3.00,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                }
+            ]
+        },
+        {
+            "name": "Dessert",
+            "options": [
+                {
+                    "name": "Flan Napolitano",
+                    "price": 5.25,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Chocoflan",
+                    "price": 5.25,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                },
+                {
+                    "name": "Pastel tres leches - 3 milk cake",
+                    "price": 7.50,
+                    "description": "",
+                    "additions": [],
+                    "deductions": []
+                }
+            ]
         }
     ]
 }

@@ -34,7 +34,7 @@ class DinersPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  //appState.changeDiners(int.parse(textController.text));
+                  appState.changeDiners(int.parse(textController.text));
                   appState.changeIndex(3);
                 },
                 child: const Text(
